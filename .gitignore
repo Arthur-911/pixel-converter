@@ -1,0 +1,10 @@
+/target
+Drop_Images_Here/*
+!Drop_Images_Here/.gitkeep
+Pixel_Outputs/*
+!Pixel_Outputs/.gitkeep
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.bmp

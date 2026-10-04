@@ -1,0 +1,17 @@
+[package]
+name = "pixelgenrator"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp", "bmp"] }
+rayon = "1.10"
+clap = { version = "4.5", features = ["derive"] }
+rfd = "0.17.2"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
